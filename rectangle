@@ -1,0 +1,16 @@
+#include<stdio.h>
+struct student
+{
+ 
+ float height,width,area;
+}r1;
+int main()
+{
+	printf(" enter the height: ");
+	scanf("%f",&r1.height);
+    printf("\nenter the width: ");
+    scanf("%f",&r1.width);
+    r1.area=r1.height*r1.width;
+    printf("area=%f",r1.area);
+	
+}
