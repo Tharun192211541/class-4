@@ -1,0 +1,27 @@
+#include<stdio.h>
+struct student
+{
+	char str1[100];
+	int id;
+	float cgpa 
+}b[3];
+int main ()
+{
+	int i;
+	for(i=0;i<3;i++)
+	{
+	printf("\nenter the name: ");
+	scanf("%s",&b[i].str1);
+	printf("enter cgpa : ");
+	scanf("%f",&b[i].cgpa);
+	printf("enter your id: ");
+	scanf("%d",&b[i].id);
+}
+	for(i=0;i<3;i++)
+	{
+	printf("\nname: %s",b[i].str1);
+	printf("\ncgpa: %f",b[i].cgpa);
+	printf("\nid: %d\n",b[i].id);
+}
+
+}
