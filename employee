@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct employee
+{
+	char str1[100];
+	float s;
+	int age; 
+}b[3];
+int main ()
+{
+	int i;
+	for(i=0;i<3;i++)
+	{
+	printf("\nenter the name: ");
+	scanf("%s",&b[i].str1);
+	printf("enter the salary: ");
+	scanf("%f",&b[i].s);
+	printf("enter the age: ");
+	scanf("%d",&b[i].age);
+	printf("\nname: %s",b[i].str1);
+	printf("\nsalary: %f",b[i].s);
+	printf("\nage: %d\n",b[i].age);
+}
+}
