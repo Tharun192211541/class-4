@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct book
+{
+	char str1[100];
+	char str2[100];
+	float price; 
+}b[5];
+int main ()
+{
+	int i;
+	for(i=0;i<5;i++)
+	{
+	printf("\nenter the name of book: ");
+	scanf("%s",&b[i].str1);
+	printf("enter the name of author: ");
+	scanf("%s",&b[i].str2);
+	printf("enter the price: ");
+	scanf("%f",&b[i].price);
+	printf("\nname of booK: %s",b[i].str1);
+	printf("\nname of the author: %s",b[i].str2);
+	printf("\nprice of the book: %f\n",b[i].price);
+}
+}
