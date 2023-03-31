@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+
+// Define the union
+union my_union {
+    int integer;
+    char string[50];
+};
+
+int main() {
+    union my_union u;
+
+    printf("Enter a value: ");
+    char input[50];
+    fgets(input, 50, stdin);
+    int is_integer = 1;
+    for (int i = 0; i < strlen(input); i++) {
+        if (input[i] < '0' || input[i] > '9') {
+            is_integer = 0;
+            break;
+        }
+    }
+    if (is_integer) {
+        u.integer = atoi(input);
+        printf("The value %d was stored in the integer field.\n", u.integer);
+    } else {
+        strcpy(u.string, input);
+        printf("The value \"%s\" was stored in the string field.\n", u.string);
+    }
+
+    return 0;
+}
