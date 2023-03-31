@@ -1,0 +1,27 @@
+#include<stdio.h>
+struct peopel
+{
+	char str1[100];
+	int age; 
+	char str2[100];
+}b[3];
+int main ()
+{
+	int i;
+	for(i=0;i<3;i++)
+	{
+	printf("\nenter the name: ");
+	scanf("%s",&b[i].str1);
+	printf("enter the address: ");
+	scanf("%s",&b[i].str2);
+	printf("enter the age: ");
+	scanf("%d",&b[i].age);
+}
+	for(i=0;i<3;i++)
+	{
+	printf("\nname: %s",b[i].str1);
+	printf("\naddress: %s",b[i].str2);
+	printf("\nage: %d\n",b[i].age);
+}
+
+}
