@@ -1,0 +1,15 @@
+#include<stdio.h>
+union student
+{
+ int a;
+ float height;
+}s1;
+int main()
+{
+	printf(" enter the age: ");
+	scanf("%d",&s1.a);
+	printf("you age is: %d",s1.a);
+    printf("enter the height: ");
+    scanf("%f",&s1.height);
+	printf("\nyour height is: %f",s1.height);
+}
